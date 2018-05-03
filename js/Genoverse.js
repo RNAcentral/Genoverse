@@ -1560,7 +1560,7 @@ var Genoverse = Base.extend({
 });
 
 $(function () {
-  if ($('link[href^="' + Genoverse.origin + 'css/genoverse.css"]').length) {
+  if ($('link[href$="genoverse.css"]').length) {
     Genoverse.ready.resolve();
   } else {
     $('<link href="' + Genoverse.origin + 'css/genoverse.css" rel="stylesheet">').appendTo('body').on('load', Genoverse.ready.resolve);
